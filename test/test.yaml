@@ -5,6 +5,6 @@ services:
   smtp-relay:
     image: erwin82/exim-smtp:latest
     command: exim -bd -q15m -v -d
-    env_file: .env
+    env_file: ../image/env
     ports:
       - 8025:8025

@@ -21,7 +21,3 @@ setup:
 	mkdir -p $(ROOT_DIR)
 	sudo chown 104:108 -R $(ROOT_DIR)
 .PHONY: setup
-
-update-exim4-conf:
-	docker run --env-file=.env --rm erwin82/$(NAME):latest bash -cx "/usr/sbin/update-exim4.conf"
-.PHONE: update-exim4-conf
