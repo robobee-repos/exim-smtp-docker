@@ -45,3 +45,9 @@ The SMTP relay can be then accessed from `localhost:8025`.
 ```
 docker-compose -f test.yaml up
 ```
+
+The tool `swaks` can be used to test the relay.
+
+```
+swaks --to erwin@muellerpublic.de --server localhost:8025
+```
